@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijay Kumar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="outercursor"></div>
+    <div class="box1"></div>
+    <div class="box box2">
+      <div class="line"></div>
+      <div class="name">
+        <h1>vijay kumar</h1>
+      </div>
+      <div class="frontend-text">
+        <h1 id="text1">Frontend</h1>
+        <h1 id="text2">Developer</h1>
+      </div>
+      <div class="scroll-down-container">
+        <div class="scroll-down">
+          <svg
+            width="120"
+            height="120"
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Define a circle path -->
+            <defs>
+              <path
+                id="circlePath"
+                d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"
+              />
+            </defs>
+            <!-- Draw the circle (optional for visualization) -->
+            <circle cx="100" cy="100" r="75" fill="none" stroke="transparant" />
+            <!-- Add the text along the circle path -->
+            <text
+              fill="#C2C2C2"
+              font-size="21"
+              font-family="Arial"
+              style="letter-spacing: 6.5px"
+            >
+              <textPath href="#circlePath" startOffset="0">
+                scroll down scroll down
+              </textPath>
+            </text>
+          </svg>
+          <img
+            src="https://www.ewan-kerboas.fr/icons/asterisk.svg"
+            alt=""
+            width="18"
+            height="24"
+          />
+        </div>
+        <div class="open-to-work">
+          <div class="text-part">
+            <h1>Open to work</h1>
+          </div>
+          <div class="img-part">
+            <img
+              src="https://www.ewan-kerboas.fr/icons/asterisk.svg"
+              alt=""
+              height="30"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box3">
+      <div class="items">
+        <h2>Frontend Addict</h2>
+        <h2>Responsive</h2>
+        <h2>GSAP</h2>
+        <h2>I love discovering new creative worlds</h2>
+      </div>
+    </div>
+    <div class="box4">
+      <div class="heading">
+        <img
+          src="https://www.ewan-kerboas.fr/icons/asterisk.svg"
+          alt=""
+          height="29"
+        />
+        <h1>Selected works</h1>
+      </div>
+      <div class="work-items">
+        <a href="https://www.google.co" target="_blank">
+          <h1>portfolio</h1>
+          <img src="works image/my portfolio.png" alt=""/>
+      </a>
+      </div>
+    </div>
+    <div class="box box5">
+      <div class="container">
+        <h2>Send me an email</h2>
+        <div class="input-field">
+          <div class="name-email">
+            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Type your message here..."
+          ></textarea>
+        </div>
+        <button id="send">Send</button>
+        <h2>GET IN TOUCH</h2>
+        <div class="footer-links">
+          <i class="ri-linkedin-line"></i>
+          <i class="ri-instagram-line"></i>
+          <i class="ri-github-line"></i>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/lenis@1.1.19/dist/lenis.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

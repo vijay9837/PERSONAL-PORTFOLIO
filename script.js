@@ -21,7 +21,7 @@ body.addEventListener("mousemove", (e) => {
   });
 });
 
-const scaleup = document.querySelectorAll(".container h2,.footer-links i");
+const scaleup = document.querySelectorAll(".getintouch-section h2,.footer-links-items");
 
 scaleup.forEach((ele) => {
   ele.addEventListener("mouseenter", () => {

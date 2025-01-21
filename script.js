@@ -119,39 +119,33 @@ workitems.forEach((ele) => {
 // .....................for box5 styling...................................
 
 gsap.from(".footer-links-items", {
-  scrollTrigger:{
-    trigger:".box5",
-    start:"-30% 50%",
-    end:"-10% 45%",
-    scrub:1,
-    
+  scrollTrigger: {
+    trigger: ".box5",
+    start: "-30% 50%",
+    end: "-10% 45%",
+    scrub: 1,
   },
-  y:100,
+  y: 100,
   opacity: 0,
-  duration:1.5,
-  stagger:0.2
+  duration: 1.5,
+  stagger: 0.2,
 });
 gsap.from(".getintouch-section > h2", {
-  scrollTrigger:{
-    trigger:".box5",
-    start:"-30% 50%",
-    end:"-20% 45%",
-    scrub:1,
-    markers:true
-
+  scrollTrigger: {
+    trigger: ".box5",
+    start: "-30% 50%",
+    end: "-20% 45%",
+    scrub: 1,
   },
-  x:-100,
+  x: -100,
   opacity: 0,
-  duration:1.5,
-  
+  duration: 1.5,
 });
 gsap.to(".work-items .line ", {
-  scrollTrigger:{
-    trigger:".box4",
-    start:"30% 40%",
+  scrollTrigger: {
+    trigger: ".box4",
+    start: "30% 40%",
   },
-  width:"100%",
-  duration:1.5,
-  
+  width: "100%",
+  duration: 1.5,
 });
-

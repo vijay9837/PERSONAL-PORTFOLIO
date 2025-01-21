@@ -21,11 +21,13 @@ body.addEventListener("mousemove", (e) => {
   });
 });
 
-const scaleup = document.querySelectorAll(".getintouch-section h2,.footer-links-items");
+const scaleup = document.querySelectorAll(
+  ".getintouch-section h2,.footer-links-items"
+);
 
 scaleup.forEach((ele) => {
   ele.addEventListener("mouseenter", () => {
-    gsap.to(".outercursor",{
+    gsap.to(".outercursor", {
       backgroundColor: "white",
       scale: 1.5,
       duration: 0.3,
@@ -92,12 +94,12 @@ workitems.forEach((ele) => {
     h1.style.transform = "translateX(20px)";
     img.style.transform = "scale(1)";
     img.style.opacity = "1";
-    gsap.to(".outercursor",{
+    gsap.to(".outercursor", {
       backgroundColor: "#ffffff",
       scale: 1.5,
       duration: 0.3,
     });
-    outercursor.innerHTML = "View"
+    outercursor.innerHTML = "View";
   });
   ele.addEventListener("mouseleave", (e) => {
     const h1 = ele.querySelector("h1");
@@ -105,12 +107,49 @@ workitems.forEach((ele) => {
     h1.style.transform = "translateX(0px)";
     img.style.transform = "scale(0)";
     img.style.opacity = "0.5";
-    gsap.to(".outercursor",{
+    gsap.to(".outercursor", {
       backgroundColor: "transparent",
       scale: 1,
       duration: 0.3,
     });
-    outercursor.innerHTML = ""
+    outercursor.innerHTML = "";
   });
+});
+
+// .....................for box5 styling...................................
+
+gsap.from(".footer-links-items", {
+  scrollTrigger:{
+    trigger:".box5",
+    start:"-40% 30%",
+    end:"-20% 20%",
+    scrub:1,
+    
+  },
+  y:100,
+  opacity: 0,
+  duration:1.5,
+  stagger:0.2
+});
+gsap.from(".getintouch-section > h2", {
+  scrollTrigger:{
+    trigger:".box5",
+    start:"-40% 30%",
+    end:"-20% 20%",
+    scrub:1
+  },
+  x:-100,
+  opacity: 0,
+  duration:1.5,
+  
+});
+gsap.to(".work-items .line ", {
+  scrollTrigger:{
+    trigger:".box4",
+    start:"30% 60%",
+  },
+  width:"100%",
+  duration:1.5,
+  
 });
 

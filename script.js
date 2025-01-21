@@ -121,8 +121,8 @@ workitems.forEach((ele) => {
 gsap.from(".footer-links-items", {
   scrollTrigger:{
     trigger:".box5",
-    start:"-40% 30%",
-    end:"-20% 20%",
+    start:"-30% 50%",
+    end:"-10% 45%",
     scrub:1,
     
   },
@@ -134,9 +134,11 @@ gsap.from(".footer-links-items", {
 gsap.from(".getintouch-section > h2", {
   scrollTrigger:{
     trigger:".box5",
-    start:"-40% 30%",
-    end:"-20% 20%",
-    scrub:1
+    start:"-30% 50%",
+    end:"-20% 45%",
+    scrub:1,
+    markers:true
+
   },
   x:-100,
   opacity: 0,
@@ -146,7 +148,7 @@ gsap.from(".getintouch-section > h2", {
 gsap.to(".work-items .line ", {
   scrollTrigger:{
     trigger:".box4",
-    start:"30% 60%",
+    start:"30% 40%",
   },
   width:"100%",
   duration:1.5,
